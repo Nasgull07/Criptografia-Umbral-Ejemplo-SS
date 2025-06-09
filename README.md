@@ -1,4 +1,4 @@
-⚙️ ¿Qué hace exactamente la librería?
+¿Qué hace exactamente la librería?
 
 Cuando haces esto:
 
