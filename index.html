@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shamir Secret Sharing Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/secrets.js-grempe@1.1.0/secrets.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>Shamir Secret Sharing</h1>
+
+  <div class="form">
+    <label>Secreto:</label>
+    <input type="text" id="secretInput" placeholder="Escribe tu secreto" />
+
+    <label>n (número de partes):</label>
+    <input type="number" id="nInput" value="5" min="2" max="10" />
+
+    <label>t (umbral mínimo):</label>
+    <input type="number" id="tInput" value="3" min="2" max="10" />
+
+    <button onclick="dividirSecreto()">Dividir secreto</button>
+  </div>
+
+  <div id="sharesContainer"></div>
+
+  <h2>Reconstrucción</h2>
+  <p>Selecciona al menos t partes:</p>
+  <div id="reconstructContainer"></div>
+  <button onclick="reconstruirSecreto()">Reconstruir secreto</button>
+  <p id="resultado"></p>
+
+  <script src="secrets.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+  background-color: #f9f9ff;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1 {
+  color: #333;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+input {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+}
+
+button {
+  padding: 10px;
+  background-color: #3a86ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #265ecf;
+}
+
+#resultado {
+  font-weight: bold;
+  margin-top: 10px;
+}
